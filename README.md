@@ -36,11 +36,10 @@ I am a software engineer and systems architect specializing in building highly s
 
 | Project Logo / Banner | Description | Technologies |
 | :---: | :--- | :--- |
-| <img src="https://via.placeholder.com/150x80/000000/FFFFFF?text=Engelsiz+Gozler" width="150" alt="Engelsiz Gözler"> | **Engelsiz Gözler** <br/> An advanced hardware/software ecosystem designed to provide AI-powered assistive technologies for the visually impaired. | `Python`, `AI Vision`, `IoT` |
-| <img src="https://via.placeholder.com/150x80/000000/38B2AC?text=Smart+Vending" width="150" alt="Smart Vending"> | **Automated Food Service Systems** <br/> Technical architecture and API integration for next-generation Smart Vending Machine infrastructures. | `Node.js`, `React`, `Hardware API` |
-| <img src="https://via.placeholder.com/150x80/000000/FFFFFF?text=Hermes+Software" width="150" alt="Hermes Software"> | **Enterprise Infrastructure** <br/> Scalable domain architectures and deployments optimizing performance across distributed systems. | `Next.js`, `Vercel`, `AWS` |
+| <img src="https://via.placeholder.com/150x80/000000/FFFFFF?text=VTON" width="150" alt="VTON"> | **VTON** <br/> An advanced Virtual Try-On (VTON) engine leveraging computer vision and generative AI to deliver seamless, real-time digital fitting experiences. | `Python`, `AI Vision`, `IoT` |
+| <img src="https://via.placeholder.com/150x80/000000/38B2AC?text=Smart+Vending" width="150" alt="KEEPS"> | **KEEPS** <br/> A comprehensive SaaS platform engineered to streamline business operations, client management, and financial workflows for independent freelancers. | `Node.js`, `React`, `Hardware API` |
+| <img src="https://via.placeholder.com/150x80/000000/FFFFFF?text=Hermes+Software" width="150" alt="NYX"> | **NYX** <br/> An adaptive, personalized AI agent designed to orchestrate complex workflows and automate daily tasks through context-aware machine learning. | `Next.js`, `Vercel`, `AWS` |
 
-> *Not: Projelerin gerçek logo veya ekran görüntülerini `src=""` içerisine ekleyerek tabloyu görsel bir şölene dönüştürebilirsin.*
 
 ---
 
