@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="snake.gif" alt="GitHub Contribution Snake" width="100%">
+  <img src="snakehub.gif" alt="GitHub Contribution Snake" width="100%">
 </div>
 
 <div align="center">
