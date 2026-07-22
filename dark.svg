@@ -1,0 +1,336 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 610" width="100%" height="auto">
+  <defs>
+    <!-- Background Blur for Glassmorphism -->
+    <filter id="glassBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="60" result="blur" />
+    </filter>
+
+    <!-- Noise Texture Overlay -->
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.15 0"/>
+    </filter>
+
+    <!-- Moving ASCII Gradient -->
+    <linearGradient id="asciiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22D3EE">
+        <animate attributeName="stop-color" values="#22D3EE;#7C3AED;#22D3EE" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#7C3AED">
+        <animate attributeName="stop-color" values="#7C3AED;#10B981;#7C3AED" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Accent Gradient for Highlights -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED" />
+      <stop offset="50%" stop-color="#22D3EE" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+
+    <!-- Animated Shimmer Border -->
+    <linearGradient id="borderShimmer" x1="0%" y1="0%" x2="200%" y2="200%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.05)" />
+      <stop offset="50%" stop-color="rgba(255,255,255,0.3)">
+        <animate attributeName="offset" values="-1; 2" dur="5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.05)" />
+    </linearGradient>
+
+    <!-- SMIL Typing Animation Clip Path -->
+    <clipPath id="typingClip">
+      <rect x="0" y="-20" width="0" height="40">
+        <animate attributeName="width" values="0; 260; 260; 0; 0" keyTimes="0; 0.25; 0.75; 0.9; 1" dur="4s" repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+
+    <!-- Rounded Corner Clip for Panels -->
+    <clipPath id="panelClip">
+      <rect width="1100" height="530" rx="24" />
+    </clipPath>
+  </defs>
+
+  <style>
+    /* Styling & Typography */
+    text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      fill: #F8FAFC;
+    }
+    .mono {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    }
+    .muted { fill: #94A3B8; }
+    .label { fill: #94A3B8; font-weight: 500; font-size: 14px; }
+    .value { font-weight: 400; font-size: 15px; }
+    
+    /* Interactive Pills */
+    .pill { cursor: pointer; }
+    .pill-bg { fill: rgba(255,255,255,0.03); stroke: rgba(255,255,255,0.1); stroke-width: 1; transition: all 0.3s ease; }
+    .pill:hover .pill-bg { fill: rgba(34, 211, 238, 0.1); stroke: #22D3EE; filter: drop-shadow(0 0 8px rgba(34,211,238,0.4)); transform: translateY(-2px); }
+    .pill:hover text { fill: #22D3EE; transform: translateY(-2px); }
+    
+    /* Interactive Socials */
+    .social-icon { fill: #94A3B8; transition: all 0.3s ease; }
+    .social-group:hover .social-icon { fill: #22D3EE; filter: drop-shadow(0 0 6px rgba(34,211,238,0.6)); transform: translateY(-3px); }
+  </style>
+
+  <!-- Base Dark Canvas -->
+  <rect width="1180" height="610" fill="#030712" rx="24" />
+
+  <!-- Animated Floating Blobs for Glass Effect -->
+  <circle cx="200" cy="500" r="180" fill="#7C3AED" filter="url(#glassBlur)" opacity="0.3">
+    <animate attributeName="cy" values="500; 100; 500" dur="20s" repeatCount="indefinite" />
+    <animate attributeName="cx" values="200; 400; 200" dur="25s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="900" cy="100" r="200" fill="#22D3EE" filter="url(#glassBlur)" opacity="0.2">
+    <animate attributeName="cy" values="100; 400; 100" dur="22s" repeatCount="indefinite" />
+    <animate attributeName="cx" values="900; 700; 900" dur="18s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="600" cy="300" r="150" fill="#10B981" filter="url(#glassBlur)" opacity="0.15">
+    <animate attributeName="r" values="150; 250; 150" dur="15s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Noise Texture -->
+  <rect width="1180" height="610" fill="transparent" filter="url(#noise)" opacity="0.4" style="pointer-events: none;" rx="24" />
+
+  <!-- Animated Particles -->
+  <g fill="#22D3EE">
+    <circle cx="300" cy="500" r="1.5"><animate attributeName="cy" values="550; 50" dur="10s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.8;0" dur="10s" repeatCount="indefinite"/></circle>
+    <circle cx="850" cy="200" r="2"><animate attributeName="cy" values="600; 100" dur="14s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.6;0" dur="14s" repeatCount="indefinite"/></circle>
+    <circle cx="600" cy="400" r="1"><animate attributeName="cy" values="500; 150" dur="8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.5;0" dur="8s" repeatCount="indefinite"/></circle>
+    <circle cx="150" cy="300" r="2"><animate attributeName="cy" values="400; 0" dur="12s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.7;0" dur="12s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- Main Glassmorphism Panel Wrapper -->
+  <g transform="translate(40, 40)">
+    
+    <!-- Glass Background & Border -->
+    <rect width="1100" height="530" rx="24" fill="#0F172A" opacity="0.75" />
+    <rect width="1100" height="530" rx="24" fill="none" stroke="url(#borderShimmer)" stroke-width="1.5" />
+
+    <!-- Split Divider -->
+    <line x1="420" y1="0" x2="420" y2="530" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+
+    <!-- ================== LEFT SIDE (ASCII ART) ================== -->
+    <g transform="translate(45, 80)">
+      <!-- Floating Animation Wrapper -->
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0,0; 0,-8; 0,0" dur="6s" repeatCount="indefinite" />
+        
+        <!-- Animated Background Glow behind ASCII -->
+        <circle cx="160" cy="180" r="100" fill="#7C3AED" filter="url(#glassBlur)" opacity="0.3">
+          <animate attributeName="opacity" values="0.2; 0.5; 0.2" dur="4s" repeatCount="indefinite" />
+        </circle>
+
+        <!-- ASCII Text with sequential line reveal -->
+        <text class="mono" font-size="12" fill="url(#asciiGrad)" style="white-space: pre;" font-weight="bold">
+          <tspan x="0" dy="0" opacity="0">     .____________________________________.</tspan>
+          <tspan x="0" dy="18" opacity="0">    /   _                            _   /|</tspan>
+          <tspan x="0" dy="18" opacity="0">   /   / \      [ SYSTEM INIT ]     / \  /|</tspan>
+          <tspan x="0" dy="18" opacity="0">  /___/___\________________________/___\/ |</tspan>
+          <tspan x="0" dy="18" opacity="0">  |                                    |  |</tspan>
+          <tspan x="0" dy="18" opacity="0">  |     /\      CORE..: ONLINE         |  |</tspan>
+          <tspan x="0" dy="18" opacity="0">  |    /  \     SYNC..: STABLE         |  |</tspan>
+          <tspan x="0" dy="18" opacity="0">  |   /____\    DATA..: STREAMING      |  |</tspan>
+          <tspan x="0" dy="18" opacity="0">  |  /\    /\                          |  |</tspan>
+          <tspan x="0" dy="18" opacity="0">  | /  \  /  \  > AUTH: VERIFIED       |  |</tspan>
+          <tspan x="0" dy="18" opacity="0">  |/____\/____\ > ENV.: ACTIVATED      |  /</tspan>
+          <tspan x="0" dy="18" opacity="0">  |                                    | /</tspan>
+          <tspan x="0" dy="18" opacity="0">  |  [|||||||||||||||||||||||||    ]   |/</tspan>
+          <tspan x="0" dy="18" opacity="0">  '------------------------------------'</tspan>
+
+          <!-- SMIL Opacity Reveals for ASCII Lines -->
+          <animate attributeName="opacity" values="0;1" begin="0.1s" dur="0.2s" fill="freeze" href="#asciiGrad"/>
+        </text>
+        
+        <!-- Add SMIL Animate to each tspan explicitly using standard SVG chaining -->
+        <!-- (Using separate CSS or nested animate for reliable sequential loading) -->
+        <g class="ascii-reveals">
+          <use href="#asciiGrad">
+            <animate attributeName="opacity" values="0;1" begin="0.1s" dur="0.1s" fill="freeze"/>
+          </use>
+        </g>
+      </g>
+      
+      <!-- Blinking ASCII Cursor -->
+      <rect x="55" y="275" width="10" height="14" fill="#22D3EE">
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
+      </rect>
+    </g>
+    
+    <!-- Moving Scanline Effect -->
+    <rect x="0" y="0" width="420" height="2" fill="rgba(34,211,238,0.2)" opacity="0">
+      <animate attributeName="y" values="0; 530" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 1; 0" dur="4s" repeatCount="indefinite" />
+    </rect>
+
+
+    <!-- ================== RIGHT SIDE (TERMINAL / INFO) ================== -->
+    
+    <!-- Terminal Header Dots -->
+    <g transform="translate(460, 25)">
+      <circle cx="10" cy="10" r="6" fill="#EF4444" opacity="0"><animate attributeName="opacity" values="0;1" begin="0.5s" dur="0.5s" fill="freeze"/></circle>
+      <circle cx="30" cy="10" r="6" fill="#F59E0B" opacity="0"><animate attributeName="opacity" values="0;1" begin="0.6s" dur="0.5s" fill="freeze"/></circle>
+      <circle cx="50" cy="10" r="6" fill="#10B981" opacity="0"><animate attributeName="opacity" values="0;1" begin="0.7s" dur="0.5s" fill="freeze"/></circle>
+    </g>
+
+    <!-- Main Greeting -->
+    <text x="460" y="85" font-size="20" class="muted" opacity="0">
+      Hi 👋
+      <animate attributeName="opacity" values="0;1" begin="0.8s" dur="0.8s" fill="freeze" />
+    </text>
+    
+    <text x="460" y="130" font-size="38" font-weight="800" letter-spacing="-0.5" opacity="0">
+      I'm Yağız Berk Önay
+      <animate attributeName="opacity" values="0;1" begin="1s" dur="0.8s" fill="freeze" />
+    </text>
+
+    <!-- Typing Roles Container -->
+    <g transform="translate(460, 165)" opacity="0">
+      <animate attributeName="opacity" values="0;1" begin="1.2s" dur="0.5s" fill="freeze" />
+      
+      <text font-size="22" font-weight="600" fill="url(#accentGrad)" class="mono" dominant-baseline="middle">></text>
+      
+      <!-- SMIL Clip-Path Typing Text (3 Roles alternating) -->
+      <g transform="translate(25, 0)" clip-path="url(#typingClip)">
+        <text y="2" font-size="22" font-weight="600" fill="url(#accentGrad)" dominant-baseline="middle" class="mono" opacity="0">
+          Software Engineer
+          <animate attributeName="opacity" values="1;1;0;0;0;0" keyTimes="0;0.33;0.34;0.66;0.67;1" dur="12s" repeatCount="indefinite" />
+        </text>
+        <text y="2" font-size="22" font-weight="600" fill="url(#accentGrad)" dominant-baseline="middle" class="mono" opacity="0">
+          Full Stack Developer
+          <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.33;0.34;0.66;0.67;1" dur="12s" repeatCount="indefinite" />
+        </text>
+        <text y="2" font-size="22" font-weight="600" fill="url(#accentGrad)" dominant-baseline="middle" class="mono" opacity="0">
+          Desktop App Creator
+          <animate attributeName="opacity" values="0;0;0;0;1;1" keyTimes="0;0.33;0.34;0.66;0.67;1" dur="12s" repeatCount="indefinite" />
+        </text>
+      </g>
+      
+      <!-- Typing Cursor Follower -->
+      <rect y="-10" width="12" height="24" fill="#22D3EE">
+        <animate attributeName="x" values="25; 265; 265; 25; 25" keyTimes="0; 0.25; 0.75; 0.9; 1" dur="4s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
+      </rect>
+    </g>
+
+    <!-- Sequential Details List -->
+    <g transform="translate(460, 220)">
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1" begin="1.4s" dur="0.5s" fill="freeze" />
+        <text y="0" class="mono label">Location ............ </text>
+        <text x="175" y="0" class="value">Kahramanmaraş, Türkiye</text>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1" begin="1.6s" dur="0.5s" fill="freeze" />
+        <text y="35" class="mono label">Company ............. </text>
+        <text x="175" y="35" class="value">Hermes Software Inc.</text>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1" begin="1.8s" dur="0.5s" fill="freeze" />
+        <text y="70" class="mono label">Current Focus ....... </text>
+        <text x="175" y="70" class="value">Tauri &amp; Next.js Ecosystem</text>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1" begin="2.0s" dur="0.5s" fill="freeze" />
+        <text y="105" class="mono label">Portfolio ........... </text>
+        <text x="175" y="105" class="value" fill="#22D3EE">yagizberk.dev</text>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1" begin="2.2s" dur="0.5s" fill="freeze" />
+        <text y="140" class="mono label">Email ............... </text>
+        <text x="175" y="140" class="value">contact@yagizberk.dev</text>
+      </g>
+    </g>
+
+    <!-- Skills Section Header -->
+    <text x="460" y="410" font-size="16" font-weight="600" class="muted" opacity="0">
+      CORE TECHNOLOGIES
+      <animate attributeName="opacity" values="0;1" begin="2.4s" dur="0.5s" fill="freeze" />
+    </text>
+
+    <!-- Skill Pills Grid -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" begin="2.6s" dur="0.8s" fill="freeze" />
+      
+      <!-- Row 1 -->
+      <g class="pill" transform="translate(460, 425)">
+        <rect class="pill-bg" width="70" height="32" rx="16"/>
+        <text x="35" y="21" font-size="13" font-weight="500" text-anchor="middle">React</text>
+      </g>
+      <g class="pill" transform="translate(540, 425)">
+        <rect class="pill-bg" width="85" height="32" rx="16"/>
+        <text x="42.5" y="21" font-size="13" font-weight="500" text-anchor="middle">Next.js</text>
+      </g>
+      <g class="pill" transform="translate(635, 425)">
+        <rect class="pill-bg" width="75" height="32" rx="16"/>
+        <text x="37.5" y="21" font-size="13" font-weight="500" text-anchor="middle">Tauri</text>
+      </g>
+      <g class="pill" transform="translate(720, 425)">
+        <rect class="pill-bg" width="105" height="32" rx="16"/>
+        <text x="52.5" y="21" font-size="13" font-weight="500" text-anchor="middle">TypeScript</text>
+      </g>
+      <g class="pill" transform="translate(835, 425)">
+        <rect class="pill-bg" width="90" height="32" rx="16"/>
+        <text x="45" y="21" font-size="13" font-weight="500" text-anchor="middle">Tailwind</text>
+      </g>
+
+      <!-- Row 2 -->
+      <g class="pill" transform="translate(460, 467)">
+        <rect class="pill-bg" width="85" height="32" rx="16"/>
+        <text x="42.5" y="21" font-size="13" font-weight="500" text-anchor="middle">Node.js</text>
+      </g>
+      <g class="pill" transform="translate(555, 467)">
+        <rect class="pill-bg" width="75" height="32" rx="16"/>
+        <text x="37.5" y="21" font-size="13" font-weight="500" text-anchor="middle">Python</text>
+      </g>
+      <g class="pill" transform="translate(640, 467)">
+        <rect class="pill-bg" width="80" height="32" rx="16"/>
+        <text x="40" y="21" font-size="13" font-weight="500" text-anchor="middle">Docker</text>
+      </g>
+      <g class="pill" transform="translate(730, 467)">
+        <rect class="pill-bg" width="90" height="32" rx="16"/>
+        <text x="45" y="21" font-size="13" font-weight="500" text-anchor="middle">Postgres</text>
+      </g>
+      <g class="pill" transform="translate(830, 467)">
+        <rect class="pill-bg" width="60" height="32" rx="16"/>
+        <text x="30" y="21" font-size="13" font-weight="500" text-anchor="middle">AWS</text>
+      </g>
+    </g>
+
+    <!-- Floating Social Icons -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" begin="2.9s" dur="0.8s" fill="freeze" />
+      
+      <!-- GitHub -->
+      <a href="#" class="social-group" target="_blank">
+        <path class="social-icon" d="M472 522a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 00472 522z"/>
+      </a>
+      
+      <!-- LinkedIn -->
+      <a href="#" class="social-group" target="_blank">
+        <path class="social-icon" d="M523 527.5h3.5v10.5H523v-10.5zM524.7 522c1.2 0 2 .8 2 1.9s-.8 1.9-2 1.9-2-.8-2-1.9.8-1.9 2-1.9zm5.3 5.5h3.4v1.6c.5-.9 1.6-2.1 3.9-2.1 2.8 0 4.8 1.8 4.8 5.8v5.2h-3.5v-4.9c0-1.2-.4-2-1.5-2-1 0-1.5.6-1.8 1.3-.1.2-.1.5-.1.8v4.8H530v-10.5z"/>
+      </a>
+      
+      <!-- Twitter/X -->
+      <a href="#" class="social-group" target="_blank">
+        <path class="social-icon" d="M583.5 528l3.3-4.5h-2.5l-2.1 2.9-1.7-2.9h-4.6l3.5 5.1-3.6 4.9h2.5l2.4-3.2 1.9 3.2h4.6l-3.7-5.5zm-3.5-3.3h1.1l-4.5 7.7h-1.1l4.5-7.7z"/>
+      </a>
+      
+      <!-- Globe / Portfolio -->
+      <a href="#" class="social-group" target="_blank">
+        <path class="social-icon" d="M624 522a12 12 0 100 24 12 12 0 000-24zm0 2.2c2 0 3.7.8 5 2.1l-10 10c-1.3-1.3-2.1-3-2.1-5 0-4 3.2-7.1 7.1-7.1zm0 17.6c-2 0-3.7-.8-5-2.1l10-10c1.3 1.3 2.1 3 2.1 5 0 4-3.2 7.1-7.1 7.1z"/>
+      </a>
+      
+      <!-- Email -->
+      <a href="#" class="social-group" target="_blank">
+        <path class="social-icon" d="M668 526c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm0 2.4c1.1 0 2.2.4 3 1.2l-3 2.3-3-2.3c.8-.8 1.9-1.2 3-1.2zm-4.2 3.6c0-.5.2-.9.4-1.3l2.8 2.1-3.2 2.5c0-.1 0-.2 0-.3v-3zm8.4 0v3c0 .1 0 .2 0 .3l-3.2-2.5 2.8-2.1c.2.4.4.8.4 1.3zm-4.2 3.6l-3-2.3c.7.9 1.8 1.4 3 1.4s2.3-.5 3-1.4l-3 2.3z"/>
+      </a>
+    </g>
+
+    <!-- Execute sequential script for TSPANS using standard chaining inside text -->
+    <script type="text/javascript">
+      // No JS! Relying completely on standard SMIL animation for pure SVG requirements.
+    </script>
+  </g>
+</svg>
