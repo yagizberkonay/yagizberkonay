@@ -1,5 +1,9 @@
 <div align="center">
 
+<picture>
+    <img src="snakehub.gif" alt="GitHub Contribution Grid Snake" width="100%">
+  </picture>
+
 <pre>
   _   _                               ____         __ _                          
  | | | | ___ _ __ _ __ ___   ___  ___/ ___|  ___  / _| |___      ____ _ _ __ ___ 
