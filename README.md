@@ -12,37 +12,37 @@
 
 <br>
 
-> *Arayüzde sessizlik, arka planda kusursuz bir kaos yönetimi.*
+> *Silence in the interface. Flawless orchestration in the backend.*
 
 </div>
 
 <br>
 
 <div align="center">
-  <b>Hermes Software</b> bünyesinde sistem mimarı.<br>
-  <b>2564 aktif müşterinin</b> ekosistemini, sıfır toleranslı performans ve siyah-beyaz bir estetikle yönetiyorum.<br>
-  Cross-platform mimariler, 3D uzamsal hesaplamalar ve kurumsal otomasyonlar tasarlıyorum.
+  Systems Architect operating at the core of <b>Hermes Software</b>.<br>
+  Currently engineering the digital infrastructure and experience for <b>2564 active enterprise clients</b>.<br>
+  Specializing in memory-safe cross-platform architectures, 3D spatial computation, and zero-latency ecosystems masked behind strict, monochromatic aesthetics.
 </div>
 
 <br>
 
 ---
 
-### ▮ SİSTEM YETENEKLERİ & BİLİŞSEL ODAK
+### ▮ CORE ENGINEERING PHILOSOPHY & DISCIPLINE
 
-Karmaşık problemleri alıp, onları kullanıcı tarafında hissedilmeyen mikro süreçlere bölüyorum. Sahip olduğum mühendislik disiplini üç ana kolda birleşiyor:
+I deconstruct complex systemic bottlenecks and translate them into micro-processes that are entirely invisible to the end user. My architectural approach is defined by three pillars:
 
-*   **Cross-Platform Mühendisliği:** Tek bir kod tabanından, tüm işletim sistemlerinde native hissiyatı veren, bellek dostu (memory-safe) masaüstü ve web uygulamaları inşası.
-*   **3D Uzamsal (Spatial) Matematik & Render:** Milimetrik hassasiyet gerektiren tırnak (prong), pavé, shank gibi karmaşık fiziksel objelerin sanal ortamda, tarayıcı veya uygulama üzerinde sıfır hatayla modellenmesi.
-*   **Kurumsal Mimari & UX/UI Redüksiyonu:** "Sadece gerekli olanı" ekranda tutarak, bilişsel yükü sıfıra indiren kurumsal düzeyde (ERP/CRM) arayüz tasarımı ve veritabanı optimizasyonu.
+*   **Cross-Platform Native Bridging:** Building lightweight, memory-safe desktop and web applications from a single codebase. I focus on achieving true native performance without the bloat of traditional electron-like environments.
+*   **3D Spatial Mathematics & CAD Rendering:** Translating strict physical constraints into virtual environments with sub-millimeter accuracy. This involves calculating exact prong placements, gemstone settings, complex shank curvatures, and dynamic pavé alignments with zero margin for error in WebGL/Canvas rendering.
+*   **UI/UX Reduction & Cognitive Offloading:** Interface design is an exercise in elimination. By utilizing a strict black, white, and gray color palette, I strip away visual noise, prioritizing data density, typography, and pure functionality. The interface must never compete with the data it presents.
 
 ---
 
-### ▮ TEKNOLOJİ STACK'İ & DİLLER
+### ▮ TECHNICAL STACK & INFRASTRUCTURE
 
-*Güçlü bir mimari, doğru yapı taşlarıyla başlar.*
+*A resilient architecture requires uncompromising building blocks.*
 
-**Diller & Çekirdek:**
+**Core Languages:**
 <p align="left">
   <img src="https://img.shields.io/badge/TypeScript-000000?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
@@ -50,48 +50,48 @@ Karmaşık problemleri alıp, onları kullanıcı tarafında hissedilmeyen mikro
   <img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
 </p>
 
-**Framework & Ekosistem:**
+**Frameworks & Runtimes:**
 <p align="left">
   <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/React-000000?style=for-the-badge&logo=react&logoColor=white" alt="React" />
   <img src="https://img.shields.io/badge/Tauri-000000?style=for-the-badge&logo=tauri&logoColor=white" alt="Tauri" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-000000?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind" />
   <img src="https://img.shields.io/badge/Node.js-000000?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/React-000000?style=for-the-badge&logo=react&logoColor=white" alt="React" />
 </p>
 
 ---
 
-### ▮ AKTİF PROJEKSİYONLAR & ODAK NOKTALARI
+### ▮ FLAGSHIP INITIATIVES & ARCHITECTURES
 
-Şu an mimarisini yönettiğim ve geliştirmekte olduğum amiral gemisi inisiyatifler:
+The following are the primary ecosystems I am currently architecting, scaling, and maintaining:
 
-#### 1. VTON (Virtual Try-On Engine)
-> **Kapsam:** *Gerçek Zamanlı 3D Projeksiyon ve AR Entegrasyonu*
-Fiziksel takı ve objelerin, milimetrik CAD verileri (taş yuvası, galeri hesaplamaları) kullanılarak dijital dünyaya aktarılması. Kullanıcının donanımını yormadan, tarayıcı veya istemci üzerinde gerçekçi gölgelendirme (render) ve sanal deneme deneyimi sunan özel motor.
+#### 1. VTON (Virtual Try-On & Spatial Engine)
+> **Domain:** *Real-Time 3D Projection, AR Integration, and CAD Manipulation*
+An advanced spatial engine engineered specifically for the high-end jewelry sector. VTON bridges the gap between raw manufacturing data and front-end visualization. It processes complex physical parameters—such as gallery depth, shank thickness, and multi-stone pavé arrays—and projects them into a client-side environment. The engine optimizes heavy 3D rendering to run fluidly on standard browser hardware, calculating realistic metallic shading and gemstone refraction in real-time.
 
 #### 2. GEMMA
-> **Kapsam:** *Gelişmiş Veri & Zeka Modeli*
-Sistemlerin arka planında çalışan, veri işleme ve akıllı karar alma mekanizması. Yüksek hacimli işlemleri asenkron bir yapıda çözerek kullanıcıya sadece sonuçları ileten, entegre yapay zeka/kompütasyonel mimari katmanı. 
+> **Domain:** *Advanced Data Processing & Asynchronous Logic Model*
+The cognitive backend layer designed for high-throughput computation. GEMMA operates as a decoupled intelligence unit that intercepts massive datasets, runs complex predictive or sorting algorithms, and feeds only the finalized, ultra-lightweight results back to the client interface. It is built to resolve systemic bottlenecks through aggressive asynchronous task queuing and memory optimization.
 
 #### 3. KEEPS
-> **Kapsam:** *Güvenli Veri & Durum Yönetimi*
-Kritik bilgilerin, kurumsal süreçlerin ve kişisel verilerin ultra-minimalist bir arayüz arkasında, en yüksek standartlarla depolanıp yönetildiği modüler platform. Hiçbir gereksiz detaya yer verilmeyen, salt fonksiyonalite odaklı yapı.
+> **Domain:** *Immutable State Management & Secure Vaulting*
+A modular platform architected for the absolute security and management of critical enterprise states and personal data. KEEPS operates on a zero-trust philosophy. It masks cryptographic data storage and complex authorization pipelines behind an aggressively minimalist UI. Every function is stripped down to raw utility, ensuring that user interaction remains frictionless while maintaining enterprise-grade security protocols.
 
 <br>
 
-*Diğer Gelişen Ekosistemler:*
-*   **Faos CRM/ERP:** Eğitim sektörü için tasarlanmış, süreç otomasyonunu merkeze alan tam entegre sistem.
-*   **Tarot Fintech:** Finansal işlemlerin, mistik bir altyapı ve kişiselleştirilmiş bir kullanıcı deneyimi ile harmanlandığı cross-platform mobil inisiyatif.
+#### ▹ Secondary Ecosystems
+*   **Faos CRM/ERP:** A fully integrated, automation-centric enterprise resource planning platform engineered for the educational sector. Features highly complex relational databases managed through a simplified, monochrome administrative panel.
+*   **Tarot Fintech:** A cross-platform mobile architecture that merges traditional, secure banking protocols with a highly personalized, mystical user journey. Users define their financial trajectory through interactive tarot generation during onboarding.
 
 ---
 
-### ▮ TERMİNAL
+### ▮ COMMUNICATION PROTOCOL
 
 ```bash
 $ ping hermes-architect
-> BAĞLANTI KURULDU...
+> CONNECTION ESTABLISHED...
 
-$ cat iletisim.txt
-> Email:    iletisim@domain.com
-> LinkedIn: [linkedin.com/in/kullanici-adi](https://linkedin.com/in/kullanici-adi)
-> Web:      hermes-software.com
+$ cat protocol.txt
+> Email:    contact@yagizberkonay.com.tr
+> LinkedIn: [linkedin.com/in/yagizberkonay](https://linkedin.com/in/yagizberkonay)
+> Web:      hermessoftware.net
